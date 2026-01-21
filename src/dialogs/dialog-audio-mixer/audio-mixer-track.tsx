@@ -1,7 +1,7 @@
-import { Slider } from "@mui/material";
-import { Track } from "../../alphatab-types/alphatab-types";
-import styled from "@emotion/styled";
-import { useEffect, useState } from "react";
+import { Slider } from '@mui/material';
+import styled from '@emotion/styled';
+import { useEffect, useState } from 'react';
+import { Track } from '../../alphatab-types/alphatab-types';
 
 interface AudioMixerTrack {
   track: Track;
@@ -13,18 +13,18 @@ const AudioMixerLayout = styled('div')({
   flexDirection: 'column',
   alignItems: 'center',
   height: '300px',
-  width: '200px'
+  width: '200px',
 });
 
 const AudioMixerTrackName = styled('p')({
   height: '120px',
-  textAlign: 'center'
+  textAlign: 'center',
 });
 
 const VerticalVolumeSlider = styled(Slider)({
   '& .MuiSlider-thumb': {
     borderRadius: '2px',
-    height: '10px'
+    height: '10px',
   },
 })
 
