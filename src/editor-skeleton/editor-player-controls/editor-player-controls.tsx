@@ -4,9 +4,9 @@ import PlayPauseGlyph from '@glyphs/player-controls/play';
 import CountInGlyph from '@glyphs/player-controls/count-in';
 import MetronomeGlyph from '@glyphs/player-controls/metronome';
 import RepeatGlyph from '@glyphs/player-controls/repeat';
-import AudioMixerGlyph from '@glyphs/player-controls/audio-mixer';
 import VolumeControlComponent from './volume-control';
 import EditorPlayerSpeedComponent from './editor-player-speed';
+import AudioMixerGlyph from '@glyphs/player-controls/audio-mixer';
 
 interface EditorPlayerControlsProps {
   playPause: () => void;

@@ -3,8 +3,6 @@ import useStateRef from 'react-usestateref';
 import {
   styled,
 } from '@mui/material';
-import { DialogAudioMixer } from '@dialogs/dialog-audio-mixer/dialog-audio-mixer';
-import useDialog from '@hooks/use-dialog';
 import SelectedNoteController from '../editor/selected-note-controller';
 import EventEmitter from '../editor/ui-actions/event-emitter';
 import { EditorUIEvent } from '../editor/ui-actions/editor-ui-event';
@@ -26,6 +24,8 @@ import EditorActionDispatcher from '../editor/editor-action-dispatcher';
 import EditorScoreState from '../editor/editor-score-state';
 import exportGuitarPro from './editor-export/export-guitar-pro';
 import exportMidi from './editor-export/export-midi';
+import { DialogAudioMixer } from '@dialogs/dialog-audio-mixer/dialog-audio-mixer';
+import useDialog from '@hooks/use-dialog';
 
 function useForceUpdate() {
   const [_, setValue] = useState(0); // integer state
@@ -254,7 +254,7 @@ export default function Editor({ hasDialog }: { hasDialog: boolean }) {
   const {
     openDialog: openAudioMixerDialog,
     closeDialog: closeAudioMixerDialog,
-    isDialogOpen: isAudioMixerDialogOpen,
+    isDialogOpen: isAudioMixerDialogOpen
   } = useDialog();
 
   return (

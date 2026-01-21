@@ -1,7 +1,7 @@
-import { Dialog } from '@mui/material';
-import styled from '@emotion/styled';
-import { Score, Track } from '../../alphatab-types/alphatab-types';
-import { AudioMixerTrack } from './audio-mixer-track';
+import { Dialog } from "@mui/material";
+import { Score, Track } from "../../alphatab-types/alphatab-types";
+import styled from "@emotion/styled";
+import { AudioMixerTrack } from "./audio-mixer-track";
 
 interface AudioMixerProps {
   isOpen: boolean;
@@ -12,7 +12,7 @@ interface AudioMixerProps {
 
 const TrackLayout = styled('div')({
   display: 'flex',
-  height: '360px',
+  height: '360px'
 });
 
 export function DialogAudioMixer(props: AudioMixerProps) {
